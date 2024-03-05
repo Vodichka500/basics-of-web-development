@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Szybki kurs HTML</title>
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formularze.css" type="text/css"/>
+</head>
+<body>
+<h3>ctrl+alt+L -> naprawia formatowanie</h3>
+<div id="kontener">
+    <div id="banner"><h2>Szybki kurs HTML</h2></div>
+    <div id="menu">
+        <ul id="nav">
+            <li><a href="index.html">Podstawy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="">Formularze</a>
+                <ul>
+                    <li><a href="formularz.html">Pola formularza</a></li>
+                    <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                </ul>
+            </li>
+            <li><a href="" title="">Galeria</a></li>
+        </ul>
+    </div>
+
+    <div id="tresc">
+        <h3>Podstawowe zmaczniki formularz HTML</h3>
+        <ol>
+            <li>&lt;form&gt; - Znacznik podstawowy zawierujący pola formularza</li>
+            <li>&lt;input&gt; - znacznik umożliwia wstawianie różnych pól<br>
+                (pole tekstow, przycisk typu ratio przycisk typu chekbox)<br>
+                w zależnośći os wartośći jego atrybutu
+
+            </li>
+            <li>&lt;select&gt; - pole formularz typu lista rozwijana</li>
+            <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+            <li>&lt;button&gt; - pole formularza typu button</li>
+
+        </ol>
+
+        <h3>Przykladowy formularz HTML:</h3>
+        <form>
+            <label for="naz">Nazwisko</label>
+            <input id="naz" type="text" name="nazwisko"/> <br>
+
+            <label for="wiek">Wiek</label>
+            <input id="wiek" type="text" name="wiek"/> <br>
+
+            <label for="pan">Państwo</label>
+            <select id="pan" name="wybierz">
+                <option value="P">Poland</option>
+                <option value="U">Ukrain</option>
+                <option value="B">Belarus</option>
+                <option value="N">Norway</option>
+            </select> <br>
+
+            <label for="email">email</label>
+            <input id="email" type="text" name="email"/> <br>
+
+            <h3>Zamawiam formularz z języka:</h3>
+            <input id="P" type="checkbox" name="jezyk"/>
+            <label for="p">PHP</label>
+            <input id="C" type="checkbox" name="jezyk"/>
+            <label for="C">C/C++</label>
+            <input id="J" type="checkbox" name="jezyk"/>
+            <label for="J">Java</label>
+
+            <h3>Sposób oplaty</h3>
+            <input id="ec" type="radio" name="card"/>
+            <label for="ec">eurocard</label>
+            <input id="v" type="radio" name="card"/>visa
+            <label for="v">visa</label>
+            <input id="pb" type="radio" name="card"/>
+            <label for="pb">przelew bankowy</label> <br>
+            <button name="send">Wyslij</button>
+            <button name="back">Anuluj</button>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* LABORATORIUM 2*/
+#nav {
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+ul#nav li {
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #98bed8;
+    margin-left: 3px;
+}
+ul#nav li:hover {
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #f0f0f0;
+    margin-left: 3px;
+}
+ul#nav li a {
+    display : block;
+    padding : 4pt;
+    text-decoration : none;
+}
+ul#nav li li a {
+    width: 160px;
+}
+ul#nav li li:hover {
+    background: white;
+}
+ul#nav li ul {
+    overflow: hidden;
+    display: none;
+}
+ul#nav li:hover ul {
+    position: absolute;
+    background: #aaa;
+    padding: 0;
+    display: block;
+    width: 177px;
+}
+
+
+body{
+    background: #4ae;
+    color:#000040;
+}
+
+form {
+    background-color: #d8e8ff;
+    align-content: center;
+    text-align: left;
+}
+
+input {
+    background-color: #4ae;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+select {
+    background-color: #4ae;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="get">
+    <fieldset>
+        *Beneficjent: <input  required list="Blist" type="text"><br>
+        <datalist id="Blist">
+            <option value="Wioski Dziecięcie SOS"></option>
+        </datalist>
+        *Wartosć dotacji <input  required min="20" step="5" type="number" placeholder=">20" title="Minimalna wartość 20">
+    </fieldset>
+
+    <fieldset>
+        <legend>Dane karty platniczej</legend>
+        *Karta
+        <input required type="radio" name="card" value="mastercard" > mastercard
+        <input type="radio" name="card" value="visa"> visa <br>
+        *Number
+        <input  required type="text" pattern="\d{13,16}" placeholder="0000 1111 2222 3333" title="Numer karty 13 lub 16 cyfr"> <br>
+        *Data ważności
+        <input  required type="date" title="Data ważności karty platniczej"><br>
+        *CVC
+        <input  required type="text" pattern="\d{3,4}" placeholder="999" title="Kod CVC zlożony z 3 lub 4 cyfr"><br>
+    </fieldset>
+
+    *Darczyńca:
+    <input  required type="text" pattern=".{3}" title="Imie darczyńcy min. 3 znaki    ">
+
+    <br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+
+</form>
+</body>
+</html>
